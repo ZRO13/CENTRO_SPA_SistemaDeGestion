@@ -1,0 +1,47 @@
+/*==================================================
+    CLIENTES.CSS
+    Estilos específicos del CRUD de Clientes
+==================================================*/
+
+.clientes-form-card {
+    margin-bottom: var(--space-7);
+    border: 1px solid var(--border-color);
+}
+
+.clientes-form-hint {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-5);
+}
+
+.clientes-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+}
+
+.clientes-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-color);
+}
+
+.clientes-buscador {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.clientes-buscador input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+}
+
+.clientes-acciones {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}

@@ -1,0 +1,48 @@
+/*==================================================
+    USUARIOS.CSS
+    Estilos específicos del CRUD de Usuarios
+==================================================*/
+
+.usuarios-buscador {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.usuarios-buscador input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+}
+
+.usuarios-acciones {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.usuarios-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+}
+
+.usuarios-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-color);
+}
+
+.form-check label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: var(--font-regular);
+    cursor: pointer;
+}
+
+.form-check input[type="checkbox"] {
+    width: auto;
+}

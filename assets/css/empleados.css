@@ -1,0 +1,49 @@
+/*Autor: Zhunaula Imbaquingo Kevin Leodan */
+
+/*==================================================
+    EMPLEADOS.CSS
+    Estilos específicos del CRUD de Empleados
+==================================================*/
+
+.empleados-form-card {
+    margin-bottom: var(--space-7);
+    border: 1px solid var(--border-color);
+}
+
+.empleados-form-hint {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-5);
+}
+
+.empleados-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+}
+
+.empleados-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-color);
+}
+
+.empleados-buscador {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.empleados-buscador input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+}
+
+.empleados-acciones {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}

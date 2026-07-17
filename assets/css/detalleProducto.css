@@ -1,0 +1,77 @@
+/*Autor: Marvin Castro */
+
+.detalle-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.detalle-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .1);
+}
+
+.detalle-imagen img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.categoria {
+    background: #ffe7f2;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #c45089;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.detalle-info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.precio {
+    font-size: 42px;
+    color: #cf6d9d;
+    margin-bottom: 25px;
+}
+
+.cantidad {
+    margin: 25px 0;
+}
+
+.cantidad input {
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.acciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+@media(max-width:900px) {
+    .detalle-card {
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-imagen img {
+        height: 350px;
+    }
+
+}

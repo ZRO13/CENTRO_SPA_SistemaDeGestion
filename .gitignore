@@ -1,0 +1,13 @@
+# --- Base de datos y credenciales ---
+# Descomenta la siguiente línea si creas un archivo .env o config.php con claves reales:
+# config.php
+
+# --- Archivos del Editor (VS Code) ---
+.vscode/
+*.code-workspace
+
+# --- Archivos basura del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.env

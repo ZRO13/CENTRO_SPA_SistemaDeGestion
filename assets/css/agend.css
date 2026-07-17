@@ -1,0 +1,146 @@
+/*Autor: Maria Belén Cassiaux Guerreo */
+/* estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-titulo { 
+    text-align: center; 
+    color: var(--text-black); 
+    margin-bottom: 60px; 
+    font-size: 16px; 
+}
+/* Filtros */
+.filtros {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: var(--space-5);
+    margin-bottom: var(--space-7);
+    border-radius: var(--radius-md);
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.filtros label {
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+}
+
+#filtroEstado, #filtroFecha, #buscadorGeneral {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    background: var(--bg-surface);
+}
+
+/* Tabla */
+.tabla-seccion {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.tabla-seccion th {
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    padding: 14px;
+    text-align: center;
+}
+
+.tabla-seccion td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.msg-error {
+    color: var(--color-danger);
+    font-size: 11px;
+    min-height: 15px;
+    margin-top: 2px;
+}
+
+/* Grid para los checkboxes */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    background: var(--bg-body);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: var(--transicion);
+}
+
+.checkbox-item:hover {
+    border-color: var(--color-principal);
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+/* */
+/* reserva */
+/* Formulario */
+.form-panel {
+    background: var(--bg-surface);
+    padding: var(--space-6);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.form-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.form-group label {
+    display: block;
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+}
+
+/* Checkboxes */
+#contenedorServicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background: var(--bg-body);
+    border-radius: var(--radius-sm);
+}

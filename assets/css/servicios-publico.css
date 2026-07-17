@@ -1,0 +1,209 @@
+/*Autor: Arias Pugo Marcela Romina */
+
+/* Catálogo público de servicios: basado en el catálogo de productos */
+.services-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
+        url("https://media.istockphoto.com/id/1590247969/es/foto/hermosa-mujer-disfrutando-de-recibir-un-tratamiento-facial-en-el-spa.jpg?s=612x612&w=0&k=20&c=VFiwmig3p5QYZ_tWfd8_6szVK9HSImwFUonYjIDDXF0=") center 45% / cover no-repeat;
+}
+
+.services-hero-content {
+    max-width: 620px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.services-hero h1 {
+    margin: 0 0 15px;
+    color: white;
+    font-size: 46px;
+}
+
+.services-hero p {
+    margin: 0 0 24px;
+    color: rgba(255, 255, 255, .9);
+    font-size: 18px;
+}
+
+.services-catalog {
+    padding: 70px 0 82px;
+}
+
+.services-catalog-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.services-catalog-header h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.services-catalog-header p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.services-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.services-filters input,
+.services-filters select {
+    min-height: 46px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    background: white;
+}
+
+.services-filters input {
+    width: min(420px, 100%);
+}
+
+.services-filters select {
+    min-width: 220px;
+}
+
+.services-filters .btn {
+    min-height: 46px;
+    border-radius: 24px;
+}
+
+.services-results {
+    margin: 0 0 28px;
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 14px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    overflow: hidden;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: transform .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img,
+.service-placeholder {
+    width: 100%;
+    height: 230px;
+}
+
+.service-card img {
+    object-fit: cover;
+}
+
+.service-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3e5f5;
+    color: #8b5e83;
+    font-size: 50px;
+}
+
+.service-info {
+    padding: 20px;
+}
+
+.service-category {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #f3e5f5;
+    color: #8b5e83;
+    font-size: 13px;
+}
+
+.service-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.service-info p {
+    min-height: 66px;
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.service-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #eee;
+}
+
+.service-footer strong {
+    color: #8b5e83;
+    font-size: 24px;
+}
+
+.service-status {
+    color: #4d7c57;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.services-empty {
+    grid-column: 1 / -1;
+    padding: 48px;
+    border: 1px dashed #cbc4bb;
+    border-radius: 16px;
+    background: white;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.services-empty i {
+    margin-bottom: 10px;
+    color: #8b5e83;
+    font-size: 40px;
+}
+
+@media (max-width: 680px) {
+    .services-hero {
+        min-height: 380px;
+    }
+
+    .services-hero h1 {
+        font-size: 34px;
+    }
+
+    .services-filters {
+        flex-direction: column;
+    }
+
+    .services-filters input,
+    .services-filters select,
+    .services-filters .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+/*Autor: Zhunaula Imbaquingo Kevin Leodan */
+
+/*==================================================
+    LOGIN.CSS
+    Estilos específicos de las vistas de autenticación
+    (login y registro). Reutilizado por ambas para
+    mantener una identidad visual consistente.
+==================================================*/
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: var(--space-7) var(--space-4);
+    background: var(--bg-body);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+}
+
+.auth-card-title {
+    text-align: center;
+    margin-bottom: var(--space-2);
+}
+
+.auth-card-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-6);
+}
+
+.auth-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+}
+
+.auth-footer-link {
+    text-align: center;
+    margin-top: var(--space-5);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.auth-footer-link a {
+    color: var(--color-primary);
+    font-weight: var(--font-medium);
+}
+
+.auth-footer-link a:hover {
+    text-decoration: underline;
+}
