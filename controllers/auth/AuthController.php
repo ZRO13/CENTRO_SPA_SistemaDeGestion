@@ -8,7 +8,7 @@ require_once "models/dao/Usuarios/UsuarioDAO.php";
 require_once "models/dao/Usuarios/ClienteDAO.php";
 require_once "models/dao/Usuarios/RolDAO.php";
 require_once "models/dto/Usuarios/usuario.php";
-require_once "models/dto/usuarios/cliente.php";
+require_once "models/dto/Usuarios/cliente.php";
 
 class AuthController
 {
