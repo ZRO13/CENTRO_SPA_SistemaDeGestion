@@ -8,7 +8,7 @@
 // utilizada por el resto de los DAO del proyecto: UsuarioDAO, EmpleadoDAO, RolDAO)
 
 require_once "models/dao/BaseDAO.php";
-require_once "models/dto/usuarios/cliente.php";
+require_once "models/dto/Usuarios/cliente.php";
 
 class ClienteDAO extends BaseDAO
 {
