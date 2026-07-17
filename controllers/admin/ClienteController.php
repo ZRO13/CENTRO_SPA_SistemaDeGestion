@@ -6,11 +6,11 @@
 // y de su fila en 'clientes' dentro de una transacción.
 
 require_once "controllers/SesionHelper.php";
-require_once "models/dao/usuarios/ClienteDAO.php";
-require_once "models/dao/usuarios/UsuarioDAO.php";
-require_once "models/dao/usuarios/RolDAO.php";
-require_once "models/dto/usuarios/cliente.php";
-require_once "models/dto/usuarios/usuario.php";
+require_once "models/dao/Usuarios/ClienteDAO.php";
+require_once "models/dao/Usuarios/UsuarioDAO.php";
+require_once "models/dao/Usuarios/RolDAO.php";
+require_once "models/dto/Usuarios/cliente.php";
+require_once "models/dto/Usuarios/usuario.php";
 
 class ClienteController
 {
