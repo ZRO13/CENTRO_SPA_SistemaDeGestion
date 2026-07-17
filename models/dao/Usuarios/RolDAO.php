@@ -7,7 +7,7 @@
 // este DAO únicamente expone métodos de consulta.
 
 require_once "models/dao/BaseDAO.php";
-require_once "models/dto/usuarios/rol.php";
+require_once "models/dto/Usuarios/rol.php";
 
 class RolDAO extends BaseDAO
 {
