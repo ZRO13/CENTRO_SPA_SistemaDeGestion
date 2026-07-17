@@ -7,7 +7,7 @@
 // esa responsabilidad pertenece a los Controllers.
 
 require_once "models/dao/BaseDAO.php";
-require_once "models/dto/usuarios/usuario.php";
+require_once "models/dto/Usuarios/usuario.php";
 
 class UsuarioDAO extends BaseDAO
 {
